@@ -11793,7 +11793,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">helper</span>
@@ -11840,7 +11840,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sample_i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
@@ -11885,7 +11885,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">collections</span>
@@ -11956,7 +11956,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">project_tests</span> <span class="k">as</span> <span class="nn">tests</span>
@@ -12043,7 +12043,7 @@ Sequence 3 in x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -12111,7 +12111,7 @@ Sequence 3 in x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">preprocess</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
@@ -12180,7 +12180,7 @@ You will begin by training four relatively simple architectures.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">logits_to_text</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">):</span>
@@ -12232,7 +12232,7 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">GRU</span><span class="p">,</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">TimeDistributed</span>
@@ -12706,7 +12706,7 @@ new jersey est jamais en en l&#39; et il est est en en &lt;PAD&gt; &lt;PAD&gt; &
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_final</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -12770,7 +12770,191 @@ new jersey est jamais en en l&#39; et il est est en en &lt;PAD&gt; &lt;PAD&gt; &
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">model_final</span><span class="p">(</span><span class="n">preproc_english_sentences</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> 
+                    <span class="nb">len</span><span class="p">(</span><span class="n">english_tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">french_tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">preproc_english_sentences</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Train on 110288 samples, validate on 27573 samples
+Epoch 1/10
+110288/110288 [==============================] - 137s - loss: 1.7503 - acc: 0.5870 - val_loss: 1.0880 - val_acc: 0.6941
+Epoch 2/10
+110288/110288 [==============================] - 137s - loss: 0.9080 - acc: 0.7368 - val_loss: 0.8391 - val_acc: 0.7499
+Epoch 3/10
+110288/110288 [==============================] - 137s - loss: 0.6868 - acc: 0.7896 - val_loss: 0.6126 - val_acc: 0.8070
+Epoch 4/10
+110288/110288 [==============================] - 137s - loss: 0.5313 - acc: 0.8338 - val_loss: 0.4745 - val_acc: 0.8499
+Epoch 5/10
+110288/110288 [==============================] - 137s - loss: 0.4402 - acc: 0.8617 - val_loss: 0.3931 - val_acc: 0.8772
+Epoch 6/10
+110288/110288 [==============================] - 137s - loss: 0.3743 - acc: 0.8824 - val_loss: 0.3376 - val_acc: 0.8961
+Epoch 7/10
+110288/110288 [==============================] - 137s - loss: 0.3026 - acc: 0.9077 - val_loss: 0.3501 - val_acc: 0.8891
+Epoch 8/10
+110288/110288 [==============================] - 137s - loss: 0.2921 - acc: 0.9088 - val_loss: 0.2564 - val_acc: 0.9219
+Epoch 9/10
+110288/110288 [==============================] - 137s - loss: 0.2454 - acc: 0.9249 - val_loss: 0.2519 - val_acc: 0.9219
+Epoch 10/10
+110288/110288 [==============================] - 137s - loss: 0.2298 - acc: 0.9293 - val_loss: 0.2651 - val_acc: 0.9144
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[12]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;keras.callbacks.History at 0x7f0ca0ad23c8&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">preproc_english_sentences</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Train on 124074 samples, validate on 13787 samples
+Epoch 1/10
+124074/124074 [==============================] - 146s - loss: 0.2216 - acc: 0.9316 - val_loss: 0.2260 - val_acc: 0.9306
+Epoch 2/10
+124074/124074 [==============================] - 146s - loss: 0.2020 - acc: 0.9383 - val_loss: 0.2186 - val_acc: 0.9324
+Epoch 3/10
+124074/124074 [==============================] - 146s - loss: 0.2145 - acc: 0.9356 - val_loss: 0.5461 - val_acc: 0.8383
+Epoch 4/10
+124074/124074 [==============================] - 146s - loss: 0.1992 - acc: 0.9390 - val_loss: 0.1830 - val_acc: 0.9451
+Epoch 5/10
+124074/124074 [==============================] - 146s - loss: 0.1682 - acc: 0.9489 - val_loss: 0.1842 - val_acc: 0.9434
+Epoch 6/10
+124074/124074 [==============================] - 146s - loss: 0.1689 - acc: 0.9482 - val_loss: 0.2840 - val_acc: 0.9108
+Epoch 7/10
+124074/124074 [==============================] - 146s - loss: 0.2041 - acc: 0.9391 - val_loss: 0.1713 - val_acc: 0.9481
+Epoch 8/10
+124074/124074 [==============================] - 146s - loss: 0.1544 - acc: 0.9527 - val_loss: 0.1541 - val_acc: 0.9532
+Epoch 9/10
+124074/124074 [==============================] - 146s - loss: 0.1486 - acc: 0.9543 - val_loss: 0.1547 - val_acc: 0.9535
+Epoch 10/10
+124074/124074 [==============================] - 146s - loss: 0.1728 - acc: 0.9475 - val_loss: 0.1555 - val_acc: 0.9519
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[14]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;keras.callbacks.History at 0x7f0c9d935cc0&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">preproc_english_sentences</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Train on 124074 samples, validate on 13787 samples
+Epoch 1/5
+124074/124074 [==============================] - 146s - loss: 0.1423 - acc: 0.9561 - val_loss: 0.1722 - val_acc: 0.9470
+Epoch 2/5
+124074/124074 [==============================] - 146s - loss: 0.1448 - acc: 0.9550 - val_loss: 0.1517 - val_acc: 0.9536
+Epoch 3/5
+124074/124074 [==============================] - 146s - loss: 0.1469 - acc: 0.9541 - val_loss: 0.1543 - val_acc: 0.9524
+Epoch 4/5
+124074/124074 [==============================] - 146s - loss: 0.1493 - acc: 0.9534 - val_loss: 0.1445 - val_acc: 0.9558
+Epoch 5/5
+124074/124074 [==============================] - 146s - loss: 0.1326 - acc: 0.9589 - val_loss: 0.1498 - val_acc: 0.9538
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[17]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;keras.callbacks.History at 0x7f0cd12647f0&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -12785,11 +12969,7 @@ new jersey est jamais en en l&#39; et il est est en en &lt;PAD&gt; &lt;PAD&gt; &
 <span class="sd">    :param x_tk: English tokenizer</span>
 <span class="sd">    :param y_tk: French tokenizer</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># TODO: Train neural network using model_final</span>
-    <span class="n">model</span> <span class="o">=</span> <span class="n">model_final</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="nb">len</span><span class="p">(</span><span class="n">x_tk</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_tk</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>    
-    
+
     <span class="c1">## DON&#39;T EDIT ANYTHING BELOW THIS LINE</span>
     <span class="n">y_id_to_word</span> <span class="o">=</span> <span class="p">{</span><span class="n">value</span><span class="p">:</span> <span class="n">key</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">y_tk</span><span class="o">.</span><span class="n">word_index</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
     <span class="n">y_id_to_word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&lt;PAD&gt;&#39;</span>
@@ -12823,51 +13003,11 @@ new jersey est jamais en en l&#39; et il est est en en &lt;PAD&gt; &lt;PAD&gt; &
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-embedding_2 (Embedding)      (None, 15, 128)           25600     
-_________________________________________________________________
-bidirectional_3 (Bidirection (None, 30)                12960     
-_________________________________________________________________
-repeat_vector_16 (RepeatVect (None, 21, 30)            0         
-_________________________________________________________________
-bidirectional_4 (Bidirection (None, 21, 42)            6552      
-_________________________________________________________________
-time_distributed_27 (TimeDis (None, 21, 345)           14835     
-_________________________________________________________________
-time_distributed_28 (TimeDis (None, 21, 345)           119370    
-=================================================================
-Total params: 179,317.0
-Trainable params: 179,317.0
-Non-trainable params: 0.0
-_________________________________________________________________
-Train on 110288 samples, validate on 27573 samples
-Epoch 1/10
-110288/110288 [==============================] - 135s - loss: 2.1859 - acc: 0.5121 - val_loss: 1.3722 - val_acc: 0.6427
-Epoch 2/10
-110288/110288 [==============================] - 134s - loss: 1.1770 - acc: 0.6768 - val_loss: 1.0413 - val_acc: 0.6987
-Epoch 3/10
-110288/110288 [==============================] - 134s - loss: 0.9208 - acc: 0.7323 - val_loss: 0.8609 - val_acc: 0.7421
-Epoch 4/10
-110288/110288 [==============================] - 134s - loss: 0.7634 - acc: 0.7698 - val_loss: 0.6785 - val_acc: 0.7917
-Epoch 5/10
-110288/110288 [==============================] - 134s - loss: 0.6404 - acc: 0.8014 - val_loss: 0.5806 - val_acc: 0.8201
-Epoch 6/10
-110288/110288 [==============================] - 134s - loss: 0.5305 - acc: 0.8372 - val_loss: 0.5037 - val_acc: 0.8458
-Epoch 7/10
-110288/110288 [==============================] - 134s - loss: 0.4631 - acc: 0.8595 - val_loss: 0.4156 - val_acc: 0.8762
-Epoch 8/10
-110288/110288 [==============================] - 134s - loss: 0.4014 - acc: 0.8776 - val_loss: 0.3671 - val_acc: 0.8890
-Epoch 9/10
-110288/110288 [==============================] - 134s - loss: 0.3449 - acc: 0.8951 - val_loss: 0.3234 - val_acc: 0.9025
-Epoch 10/10
-110288/110288 [==============================] - 134s - loss: 0.3128 - acc: 0.9042 - val_loss: 0.3233 - val_acc: 0.8982
-Sample 1:
+<pre>Sample 1:
 il a vu un vieux camion jaune &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 Il a vu un vieux camion jaune
 Sample 2:
-new jersey est parfois calme pendant l&#39; automne et il est parfois en en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
